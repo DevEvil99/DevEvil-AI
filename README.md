@@ -6,10 +6,16 @@ This guide will help you set up, configure, and use the server for your projects
 
 ---
 
-## **Features that are not in this Repository**
-- Search
-- Usage limit
-- DevEvil API
+## **Features Not Included in This Repository**
+
+- **Search Functionality**  
+    The search model used in DevEvil AI is not part of this repository.
+
+- **User Usage Limits**  
+  This repository does not include any user usage limits. Users can chat or generate images without restrictions, making it ideal for testing and development purposes.
+
+- **DevEvil API Integration**  
+  DevEvil API is the brain of DevEvil AI and its models, is not included in this repository. This repository utilizes publicly available APIs for chat and image generation.
 
 ---
 
@@ -156,7 +162,7 @@ The `/chat` endpoint also supports image generation. To generate an image, inclu
            'Content-Type': 'application/json',
        },
        body: JSON.stringify({
-           userMessage: "What's the weather like?",
+           userMessage: "Help me write a function",
            userId: "1"
        }),
    })
