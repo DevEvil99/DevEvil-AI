@@ -12,7 +12,7 @@ This guide will help you set up, configure, and use the server for your projects
     The search model used in DevEvil AI is not part of this repository.
 
 - **User Usage Limits**  
-  This repository does not include any user usage limits. Users can chat or generate images without restrictions, making it ideal for testing and development purposes.
+ This repository does not impose any user usage limits, allowing users to chat or generate images without restrictions. This makes it an excellent choice for testing and development purposes. Additionally, a `userId` parameter has been implemented, providing a foundation for easily adding usage limit functionality if needed in the future.
 
 - **DevEvil API Integration**  
   DevEvil API is the brain of DevEvil AI and its models, its not included in this repository. This repository utilizes publicly available APIs for chat and image generation models.
