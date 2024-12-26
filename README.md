@@ -59,7 +59,7 @@ This guide will help you set up, configure, and use the server for your projects
 ## **Features**
 
 1. **Chat API**  
-   A conversational AI model powered by xAI to generate intelligent and context-aware responses.
+   A conversational AI model powered by xAI or OpenAI to generate intelligent and context-aware responses.
 
 2. **Image Generation API**  
    Generate images based on user prompts using the FLUX model.
