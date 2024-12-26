@@ -15,7 +15,7 @@ This guide will help you set up, configure, and use the server for your projects
   This repository does not include any user usage limits. Users can chat or generate images without restrictions, making it ideal for testing and development purposes.
 
 - **DevEvil API Integration**  
-  DevEvil API is the brain of DevEvil AI and its models, is not included in this repository. This repository utilizes publicly available APIs for chat and image generation.
+  DevEvil API is the brain of DevEvil AI and its models, its not included in this repository. This repository utilizes publicly available APIs for chat and image generation models.
 
 ---
 
