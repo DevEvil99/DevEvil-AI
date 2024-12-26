@@ -19,6 +19,30 @@ This guide will help you set up, configure, and use the server for your projects
 
 ---
 
+### **Table of Contents**
+
+1. [Introduction](#devevil-ai-server---chat-and-image-generation)  
+2. [Features Not Included in This Repository](#features-not-included-in-this-repository)  
+3. [Repository Structure](#repository-structure)  
+4. [Features](#features)  
+   - Chat API  
+   - Image Generation API  
+   - FTP Integration  
+5. [Setup Guide](#setup-guide)  
+   - [Prerequisites](#1-prerequisites)  
+   - [Installation](#2-installation)  
+   - [Run the Server](#3-run-the-server)  
+6. [How to Use OpenAI Instead of xAI](#how-to-use-openai-instead-of-xai)  
+7. [Usage](#usage)  
+   - [Chat API](#chat-api)  
+   - [Image Generation API](#image-generation-api)  
+8. [How to Integrate in Your Project](#how-to-integrate-in-your-project)  
+9. [Environment Variables](#environment-variables)  
+10. [License](#license)  
+11. [Support](#support)  
+
+---
+
 ## **Repository Structure**
 
 - **`server.js`**  
@@ -94,6 +118,43 @@ You should see:
 ```
 Server is running on http://localhost:5500
 ```
+
+---
+
+### **How to Use OpenAI Instead of xAI**  
+
+If you'd like to switch from xAI to OpenAI for your project, follow these steps:  
+
+1. **Remove the `baseURL` Property**  
+   In the `const openai` declaration, remove the `baseURL` property:  
+   ```javascript
+   const openai = new OpenAI({
+       apiKey: process.env.XAI_API_KEY, // Replace with your OpenAI API key
+   });
+   ```  
+
+2. **Replace the API Key**  
+   - Update the `apiKey` value to use your OpenAI API key.  
+   - Alternatively, you can create a separate environment variable for the OpenAI API key, e.g., `OPENAI_API_KEY`, and reference it in your code:  
+     ```javascript
+     const openai = new OpenAI({
+         apiKey: process.env.OPENAI_API_KEY, // Use the OpenAI API key from the environment variable
+     });
+     ```  
+
+3. **Update the Model**  
+   In the `chatCompletion` section, change the model to one of OpenAI's chat models, such as `gpt-4o`:  
+   ```javascript
+   const chatCompletion = await openai.chat.completions.create({
+       model: "gpt-4o", // Use OpenAI's chat model
+       messages: conversationHistory,
+       temperature: 0,
+       max_tokens: 1024,
+   });
+   ```  
+
+4. **Save and Test**  
+   Save the changes and test your server to ensure it functions correctly with OpenAI.  
 
 ---
 
