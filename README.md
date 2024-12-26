@@ -1,6 +1,6 @@
 # **DevEvil AI Server - Chat and Image Generation**
 
-This repository enables you to host a powerful AI backend that supports chat and image generation using **xAI** for conversational AI and **FLUX** for advanced image generation. 
+This repository enables you to host a powerful AI backend that supports chat and image generation using **xAI/OpenAI** for conversational AI and **FLUX** for advanced image generation. 
 
 This guide will help you set up, configure, and use the server for your projects.
 
