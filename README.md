@@ -239,10 +239,12 @@ The `/chat` endpoint also supports image generation. To generate an image, inclu
 
 ## **Environment Variables**
 
-| Variable              | Description                                      | Example Value               |
-|-----------------------|--------------------------------------------------|-----------------------------|
-| `XAI_API_KEY`         | API key for xAI            | `xai-abc123`                |
-| `HUGGING_FACE_API_KEY`| API key for Hugging Face                         | `hf_abc123`                |
+| Variable              | Description                                      | Example Value               | API Console |
+|-----------------------|--------------------------------------------------|-----------------------------| -----------------------------|
+| `XAI_API_KEY`         | API key for xAI            | `xai-abc123`                |    [console.x.ai](https://console.x.ai)
+| `OPENAI_API_KEY`| API key for OpenAI                         | `sk-abc123`                | [platform.openai.com](https://platform.openai.com/)
+| `HUGGING_FACE_API_KEY`| API key for Hugging Face                         | `hf_abc123`                | [huggingface.co](https://huggingface.co/)
+
 
 
 ---
